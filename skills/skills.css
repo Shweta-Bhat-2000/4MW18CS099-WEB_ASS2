@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./images/background_body.jpg');
+  font-family: "Lato", sans-serif;
+  
+}
+
+
+
+.head-container{
+	display: flex;
+	flex: none;
+}
+
+
+#home-image{
+  background-color: #800080;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 17px;
+  width: 10%;
+}
+
+.about{
+  background-color: #800080;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 24px 16px;
+  text-align: right;
+  font-size: 17px;
+  width: 40%;
+}
+
+.tablink {
+  background-color: #800080;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 10%;
+}
+
+#home-image:hover{
+  background-color: #ba55d3;
+}
+
+.tablink:hover {
+  background-color: #ba55d3;
+}
+
+.skills-container
+{
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+	font-family: 'Otomanopee One', sans-serif;
+	font-size: 80px;
+	color: #ffffff;
+  margin: 10px;
+}
+
+.box {
+  background-color: #e6e6fa;
+  color: #696969;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.box h2 {
+  font-size: 45px;
+}
+
+#file {
+  border: none;
+  width: 250px;
+  height: 20px;
+}
+
+#file::-webkit-progress-value {
+  background: #ba55d3;
+}
+
+#file::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
